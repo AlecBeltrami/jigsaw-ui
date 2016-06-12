@@ -1,0 +1,13 @@
+:root {
+  --primary-color: #004358;
+  --link-color: #1f8a70;
+  --info-color: #33aaba;
+  --success-color: #bedb39;
+  --warning-color: #ffe11a;
+  --primary-color: #fd7400;
+  --danger-color: #fd3733;
+
+  --font-size: 16px;
+
+  --font-family-sans-serif: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}

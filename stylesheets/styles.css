@@ -1,0 +1,4 @@
+/* import should be placed before content */
+@import "vars.css";
+@import "components/normalize.css";
+@import "components/base.css";

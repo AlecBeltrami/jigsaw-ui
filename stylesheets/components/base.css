@@ -1,0 +1,16 @@
+html,
+body {
+  font-size: var(--font-size);
+}
+
+p {
+  margin: 10px 0;
+}
+
+a {
+  color: var(--link-color);
+
+  &:hover {
+    color: color(var(--link-color) blackness(70%));
+  }
+}
