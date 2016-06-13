@@ -8,7 +8,7 @@ gulp.task('styles', function () {
   var processors = [
     atImport(),
     cssnext({browsers: ['last 2 versions']}),
-    cssnano(),
+    // cssnano(),
   ];
   return gulp.src('./stylesheets/*.css')
     .pipe(postcss(processors))

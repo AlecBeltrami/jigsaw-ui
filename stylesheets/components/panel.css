@@ -1,4 +1,44 @@
-div.panel {
+.panel {
   background: white;
-  height: 50%;
+  border: 1px solid #ccc;
+  margin: 10px 0;
+}
+
+.panel__header,
+.panel__footer {
+  padding: 10px;
+}
+
+.panel__body {
+  padding: 10px;
+}
+
+.panel--default {
+  border-color: color(var(--light-gray-color) blackness(+ 10%));
+}
+
+.panel--default .panel__header,
+.panel--default .panel__footer {
+  background: var(--light-gray-color);
+  color: var(--dark-gray-color);
+}
+
+.panel--info {
+  border-color: color(var(--info-color) blackness(+ 10%));
+}
+
+.panel--info .panel__header,
+.panel--info .panel__footer {
+  background: var(--info-color);
+  color: #fff;
+}
+
+.panel--danger {
+  border-color: color(var(--danger-color) blackness(+ 10%));
+}
+
+.panel--danger .panel__header,
+.panel--danger .panel__footer {
+  background: var(--danger-color);
+  color: #fff;
 }

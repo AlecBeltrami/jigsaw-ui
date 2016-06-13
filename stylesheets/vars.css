@@ -2,11 +2,12 @@
   --primary-color: #004358;
   --link-color: #1f8a70;
   --info-color: #33aaba;
-  --success-color: #bedb39;
-  --warning-color: #ffe11a;
-  --primary-color: #fd7400;
+  --success-color: #35ac39;
+  --advert-color: #ffe11a;
+  --warning-color: #fd7400;
   --danger-color: #fd3733;
-
+  --light-gray-color: #e5e5e5;
+  --dark-gray-color: #333;
   --font-size: 16px;
 
   --font-family-sans-serif: "Helvetica Neue", Helvetica, Arial, sans-serif;

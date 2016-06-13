@@ -2,3 +2,5 @@
 @import "vars.css";
 @import "components/normalize.css";
 @import "components/base.css";
+@import "components/panel.css";
+@import "components/button.css";
