@@ -1,16 +1,16 @@
 .panel {
   background: white;
   border: 1px solid #ccc;
-  margin: 10px 0;
+  margin: 10px var(--default-spacing);
 }
 
 .panel__header,
 .panel__footer {
-  padding: 10px;
+  padding: var(--default-spacing);
 }
 
 .panel__body {
-  padding: 10px;
+  padding: var(--default-spacing);
 }
 
 .panel--default {
@@ -30,6 +30,16 @@
 .panel--info .panel__header,
 .panel--info .panel__footer {
   background: var(--info-color);
+  color: #fff;
+}
+
+.panel--warning {
+  border-color: color(var(--warning-color) blackness(+ 10%));
+}
+
+.panel--warning .panel__header,
+.panel--warning .panel__footer {
+  background: var(--warning-color);
   color: #fff;
 }
 

@@ -8,9 +8,11 @@ gulp.task('styles', function () {
   var processors = [
     atImport(),
     cssnext({browsers: ['last 2 versions']}),
-    // cssnano(),
+    cssnano(),
   ];
-  return gulp.src('./stylesheets/*.css')
+  // return gulp.src('./stylesheets/*.css')
+  // to watch all files in the directory
+  return gulp.src('./stylesheets/styles.css')
     .pipe(postcss(processors))
     .pipe(gulp.dest('./css'));
 });

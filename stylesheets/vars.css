@@ -9,8 +9,8 @@
   --light-gray-color: #e5e5e5;
   --dark-gray-color: #333;
 
-  --font-size: 16px;
+  --font-size: 22px;
   --font-family-sans-serif: "Helvetica Neue", Helvetica, Arial, sans-serif;
 
-  --col-padding: 10px;
+  --default-spacing: 1%;
 }

@@ -47,3 +47,7 @@
     background: color(var(--danger-color) blackness(+ 10%));
   }
 }
+
+.btn-group {
+  margin: var(--default-spacing);
+}
