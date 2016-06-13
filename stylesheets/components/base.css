@@ -16,6 +16,19 @@ a {
   color: var(--link-color);
 
   &:hover {
-    color: color(var(--link-color) blackness(70%));
+    color: color(var(--link-color) lightness(+ 20%));
   }
+}
+
+.clearfix {
+  zoom: 1;
+}
+
+.clearfix::after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
 }

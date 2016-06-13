@@ -1,5 +1,6 @@
-/* import should be placed before content */
-body {
+html,
+body,
+* {
   font-family: sans-serif;
   margin: 0;
   padding: 0;
@@ -77,7 +78,70 @@ a {
   color: #1f8a70
 }
 a:hover {
-  color: rgb(31, 77, 65);
+  color: rgb(60, 211, 173);
+}
+.clearfix {
+  zoom: 1;
+}
+.clearfix::after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+.row {
+  width: 100%;
+  zoom: 1;
+}
+.row::after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+[class*="col-"] {
+  float: left;
+  padding: 10px;
+}
+.col-1 {
+  width: 8.333333333333333%;
+}
+.col-2 {
+  width: 16.66666666666667%;
+}
+.col-3 {
+  width: 25%;
+}
+.col-4 {
+  width: 33.33333333333333%;
+}
+.col-5 {
+  width: 41.66666666666667%;
+}
+.col-6 {
+  width: 50%;
+}
+.col-7 {
+  width: 58.33333333333333%;
+}
+.col-8 {
+  width: 66.66666666666667%;
+}
+.col-9 {
+  width: 75%;
+}
+.col-10 {
+  width: 83.33333333333333%;
+}
+.col-11 {
+  width: 91.66666666666667%;
+}
+.col-12 {
+  width: 100%;
 }
 .panel {
   background: white;
@@ -120,6 +184,7 @@ a:hover {
   text-decoration: none;
   padding: 10px 20px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+  background: #333;
   color: #fff
 }
 .btn:hover {
