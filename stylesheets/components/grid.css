@@ -1,7 +1,13 @@
-.container-fixed {
+.container {
   max-width: 1140px;
   padding: var(--default-spacing);
   margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0;
+  }
 }
 
 .container-fluid {
