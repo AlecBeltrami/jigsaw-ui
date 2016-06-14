@@ -12,7 +12,7 @@ gulp.task('styles', function () {
   ];
   // return gulp.src('./stylesheets/*.css')
   // to watch all files in the directory
-  return gulp.src('./stylesheets/styles.css')
+  return gulp.src('./src/styles.css')
     .pipe(postcss(processors))
     .pipe(gulp.dest('./css'));
 });

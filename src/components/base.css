@@ -13,6 +13,9 @@ h5,
 h6 {
   font-family: 'Raleway', serif;
   font-weight: normal;
+  line-height: 1.5em;
+  margin-top: 0.15em;
+  margin-bottom: 0.25em;
 }
 
 .demo {
@@ -31,17 +34,4 @@ a {
   &:hover {
     color: color(var(--link-color) lightness(+ 20%));
   }
-}
-
-.clearfix {
-  zoom: 1;
-}
-
-.clearfix::after {
-  visibility: hidden;
-  display: block;
-  font-size: 0;
-  content: " ";
-  clear: both;
-  height: 0;
 }
