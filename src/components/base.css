@@ -1,7 +1,11 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+@import url(https://fonts.googleapis.com/css?family=Lora:400italic);
+
 html,
 body {
   font-family: 'Lora', serif;
   font-size: var(--font-size);
+  color: #666;
   line-height: 1.2em;
 }
 
@@ -12,26 +16,65 @@ h4,
 h5,
 h6 {
   font-family: 'Raleway', serif;
-  font-weight: normal;
   line-height: 1.5em;
   margin-top: 0.15em;
   margin-bottom: 0.25em;
 }
 
-.demo {
-  background: #999;
-  color: #fff;
-  padding: 10px;
-}
-
 p {
+  font-size: 0.8em;
   margin: 10px 0;
 }
 
 a {
+  font-family: 'Raleway', serif;
   color: var(--link-color);
 
   &:hover {
     color: color(var(--link-color) lightness(+ 20%));
   }
+}
+
+ul {
+  font-size: 0.8em;
+  margin-left: 40px;
+}
+
+ul li {
+  padding-left: 10px;
+}
+
+.btn {
+  display: inline-block;
+  font-size: 0.6em;
+  font-weight: bold;
+  padding: 10px 30px;
+  margin: 0 auto;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.2s;
+}
+
+.btn-primary {
+  background: var(--link-color);
+  border-radius: 25px;
+  border: 2px solid var(--link-color);
+  color: white;
+  &:hover {
+    background: white;
+    border-color: color(var(--link-color) lightness(+ 20%));
+    color: color(var(--link-color) lightness(+ 20%));
+  }
+}
+
+.demo {
+  background: var(--success-color);
+  color: #fff;
+  padding: 10px;
+  font-family: monospace;
+  font-size: 0.6em;
+
+  /* Fix: words longer than container will cause extra width */
+  word-wrap: break-word;
 }
