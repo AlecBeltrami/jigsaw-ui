@@ -10,7 +10,7 @@ gulp.task('styles', function () {
     cssnext({browsers: ['last 2 versions']}),
     cssnano(),
   ];
-  // return gulp.src('./stylesheets/*.css')
+  // return gulp.src('./src/*.css')
   // to watch all files in the directory
   return gulp.src('./src/styles.css')
     .pipe(postcss(processors))
