@@ -20,3 +20,20 @@ gulp.task('styles', function () {
 gulp.task('watch:styles', function() {
   gulp.watch('**/*.css', ['styles']);
 });
+
+gulp.task('demo', function () {
+  var processors = [
+    atImport(),
+    cssnext({browsers: ['last 2 versions']}),
+    cssnano(),
+  ];
+  // return gulp.src('./src/*.css')
+  // to watch all files in the directory
+  return gulp.src('./src/demo.css')
+    .pipe(postcss(processors))
+    .pipe(gulp.dest('./css'));
+});
+
+gulp.task('watch:demo', function() {
+  gulp.watch('**/*.css', ['demo', 'styles']);
+});
