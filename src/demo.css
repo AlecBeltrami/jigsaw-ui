@@ -2,10 +2,7 @@
 @import url(https://fonts.googleapis.com/css?family=Lora:400italic);
 @import "styles";
 @import "components/utilities";
-@import "components/nav";
-@import "components/forms";
 @import "components/buttons";
-@import "components/panels";
 
 html,
 body {
@@ -84,6 +81,7 @@ a {
 .v-align-40 > div {
   display: table-cell;
   vertical-align: middle;
+  width: 100%;
 }
 
 .btn--download {
