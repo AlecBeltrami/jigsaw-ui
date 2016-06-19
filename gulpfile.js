@@ -30,7 +30,7 @@ gulp.task('demo', function () {
   ];
   return gulp.src('./src/demo.css')
     .pipe(postcss(processors))
-    .pipe(gulp.dest('./dist'));
+    .pipe(gulp.dest('./demo'));
 });
 
 gulp.task('watch:demo', function() {
