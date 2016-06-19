@@ -1,7 +1,8 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto);
 @import url(https://fonts.googleapis.com/css?family=Lora:400italic);
-@import "styles.css";
+@import "styles";
 @import "components/utilities";
+@import "components/nav";
 
 html,
 body {
@@ -36,17 +37,18 @@ p {
 a {
   font-family: 'Roboto', serif;
   color: var(--link-color);
+  text-decoration: none;
 
   &:hover {
     color: color(var(--link-color) lightness(+ 20%));
   }
 }
 
-ul {
+.features {
   margin-left: 40px;
 }
 
-ul li {
+.features__item {
   padding-left: 10px;
 }
 
@@ -60,7 +62,14 @@ ul li {
   width: 100%;
 }
 
-.v-align > div {
+.v-align-40 {
+  display: table;
+  height: 40%;
+  width: 100%;
+}
+
+.v-align > div,
+.v-align-40 > div {
   display: table-cell;
   vertical-align: middle;
 }

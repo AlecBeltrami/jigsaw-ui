@@ -16,7 +16,11 @@
 
   /* Default spacing for the grid */
   --default-spacing: 1%;
+  --grid-padding: 1%;
 
   /* Fixed Grid width */
   --fixed-grid-width: 1200px;
+
+  /* Nav */
+  --nav-item-spacing: 4%;
 }

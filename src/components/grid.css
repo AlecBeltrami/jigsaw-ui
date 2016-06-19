@@ -1,13 +1,7 @@
 .container {
   max-width: var(--fixed-grid-width);
-  padding: var(--default-spacing);
+  padding: var(--grid-padding);
   margin: 0 auto;
-}
-
-@media (max-width: 768px) {
-  .container {
-    padding: 0;
-  }
 }
 
 .container-fluid {
