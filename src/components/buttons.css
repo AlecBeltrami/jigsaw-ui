@@ -1,0 +1,67 @@
+.btn {
+  color: #fff;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 0.8em;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all var(--transition-duration);
+  &:hover {
+    color: #fff;
+  }
+}
+
+.btn--link {
+  box-shadow: none;
+  background: none;
+  color: var(--link-color);
+  text-decoration: none;
+
+  &:hover {
+    color: color(var(--link-color) lightness(+ 20%));
+  }
+}
+
+.btn--default {
+  background: var(--light-gray-color);
+  &:hover {
+    background: color(var(--light-gray-color) blackness(+ 20%));
+  }
+}
+
+.btn--primary {
+  background: var(--primary-color);
+  &:hover {
+    background: color(var(--primary-color) blackness(+ 20%));
+  }
+}
+
+.btn--success {
+  background: var(--success-color);
+  &:hover {
+    background: color(var(--success-color) blackness(+ 20%));
+  }
+}
+
+.btn--info {
+  background: var(--info-color);
+  &:hover {
+    background: color(var(--info-color) blackness(+ 20%));
+  }
+}
+
+.btn--warning {
+  background: var(--warning-color);
+  &:hover {
+    background: color(var(--warning-color) blackness(+ 20%));
+  }
+}
+
+.btn--danger {
+  background: var(--danger-color);
+  &:hover {
+    background: color(var(--danger-color) blackness(+ 20%));
+  }
+}

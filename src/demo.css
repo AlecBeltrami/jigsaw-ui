@@ -3,10 +3,13 @@
 @import "styles";
 @import "components/utilities";
 @import "components/nav";
+@import "components/forms";
+@import "components/buttons";
+@import "components/panels";
 
 html,
 body {
-  font-family: 'Lora', serif;
+  font-family: 'Roboto', sans-serif;
   font-size: var(--font-size);
   color: #777;
   line-height: 1.2em;
@@ -25,12 +28,18 @@ h6 {
   color: #666;
 }
 
-::selection {
-  background: color(var(--link-color) alpha(-20%));
-  color: #fff;
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2em;
 }
 
 p {
+  font-family: 'Lora', serif;
+  font-size: 1.2em;
+  line-height: 1.5em;
   margin: 10px 0;
 }
 
@@ -49,6 +58,9 @@ a {
 }
 
 .features__item {
+  font-family: 'Lora', sans-serif;
+  font-size: 1.2em;
+  line-height: 1.5em;
   padding-left: 10px;
 }
 
@@ -74,23 +86,12 @@ a {
   vertical-align: middle;
 }
 
-.btn {
-  display: inline-block;
-  font-size: 0.6em;
-  font-weight: bold;
-  padding: 10px 30px;
-  margin: 0 auto;
-  letter-spacing: 2px;
-  text-decoration: none;
-  text-transform: uppercase;
-  transition: all 0.2s;
-}
-
-.btn-primary {
+.btn--download {
   background: var(--link-color);
   border-radius: 25px;
   border: 2px solid var(--link-color);
   color: white;
+  padding: 10px 30px;
   &:hover {
     background: white;
     border-color: color(var(--link-color) lightness(+ 20%));
@@ -103,8 +104,10 @@ a {
   color: #fff;
   padding: 10px;
   font-family: monospace;
-  font-size: 0.6em;
+  font-size: 0.9em;
+}
 
-  /* Fix: words longer than container will cause extra width */
-  word-wrap: break-word;
+::selection {
+  background: color(var(--link-color) alpha(-20%));
+  color: #fff;
 }

@@ -26,6 +26,7 @@
 [class*="col-"] {
   float: left;
   padding: var(--default-spacing);
+  word-wrap: break-word;
 }
 
 .col-1 {
