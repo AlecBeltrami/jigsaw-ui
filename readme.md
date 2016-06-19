@@ -1,10 +1,11 @@
 # Jigsaw UI
 A futuristic CSS framework with pluggable components.
 
-[Documentation](https://github.com/user/repo/blob/branch/other_file.md)
+[Documentation](https://brinidesigner.com/jigsaw-ui/docs.html)
 
 ## What is Jigsaw UI?
 Jigsaw UI is a frontend framework built for the future with backward compatibility in mind. As for now, it features a powerful responsive grid system.
+
 *Work is still in progress to add other components to the framework.*
 
 ## Why do you need a grid system?
