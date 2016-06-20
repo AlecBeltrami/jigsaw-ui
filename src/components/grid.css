@@ -31,6 +31,8 @@
 
 .col-1 {
   width: 8.333333333333333%;
+
+  /* TODO: width: calc(var(--grid-columns) * ?????); */
 }
 
 .col-2 {

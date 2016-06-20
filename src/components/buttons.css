@@ -15,7 +15,7 @@
 
 .btn--link {
   box-shadow: none;
-  background: none;
+  background: initial;
   color: var(--link-color);
   text-decoration: none;
 
