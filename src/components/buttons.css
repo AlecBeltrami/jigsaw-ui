@@ -15,7 +15,7 @@
 
 .btn--link {
   box-shadow: none;
-  background: initial;
+  background-color: transparent;
   color: var(--link-color);
   text-decoration: none;
 
@@ -25,43 +25,43 @@
 }
 
 .btn--default {
-  background: var(--light-gray-color);
+  background-color: var(--light-gray-color);
   &:hover {
-    background: color(var(--light-gray-color) blackness(+ 20%));
+    background-color: color(var(--light-gray-color) blackness(+ 20%));
   }
 }
 
 .btn--primary {
-  background: var(--primary-color);
+  background-color: var(--primary-color);
   &:hover {
     background: color(var(--primary-color) blackness(+ 20%));
   }
 }
 
 .btn--success {
-  background: var(--success-color);
+  background-color: var(--success-color);
   &:hover {
-    background: color(var(--success-color) blackness(+ 20%));
+    background-color: color(var(--success-color) blackness(+ 20%));
   }
 }
 
 .btn--info {
-  background: var(--info-color);
+  background-color: var(--info-color);
   &:hover {
-    background: color(var(--info-color) blackness(+ 20%));
+    background-color: color(var(--info-color) blackness(+ 20%));
   }
 }
 
 .btn--warning {
-  background: var(--warning-color);
+  background-color: var(--warning-color);
   &:hover {
-    background: color(var(--warning-color) blackness(+ 20%));
+    background-color: color(var(--warning-color) blackness(+ 20%));
   }
 }
 
 .btn--danger {
-  background: var(--danger-color);
+  background-color: var(--danger-color);
   &:hover {
-    background: color(var(--danger-color) blackness(+ 20%));
+    background-color: color(var(--danger-color) blackness(+ 20%));
   }
 }
